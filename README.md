@@ -10,6 +10,13 @@ This tool is to kill the rubbish time after trigger long time build task.
 2. set realtime to get most cpu time
 3. install as a service and start on boot
 
+## Install
+
+W.I.P
+
+## Usage
+
+W.I.P
 
 ## Other solution
 ### Power Options
