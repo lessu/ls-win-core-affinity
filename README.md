@@ -59,7 +59,8 @@ This tool is to kill the rubbish time after trigger long time build task.
 ```
 
 ### Config file
-example
+default configure file path is `$HOME/.caff.conf`
+example 
 ```
 # process=affinity, priority"
 # get process name by, open task manager right click on column, select process Name to show"
@@ -74,13 +75,13 @@ Notice if configure file is changed, please restart service
 ## Other solution
 ### Power Options
 You can also change the policy on how window scheduler processes, by enable hidden option in Power Options
-```
+```bat
 :: enable advanced power setting
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\7f2f5cfa-f10c-4823-b5e1-e93ae85f46b5" /v Attributes /t REG_DWORD /d 2 /f
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\93b8b6dc-0698-4d1c-9ee4-0644e900c85d" /v Attributes /t REG_DWORD /d 2 /f
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\bae08b81-2d5e-4688-ad6a-13243356654b" /v Attributes /t REG_DWORD /d 2 /f
 
-```bat
+```
 different option will change the behavoir on how to schedule different cores.( You can open Power Options to change the policy then )
 
 you can find more details by searching the keywords.
